@@ -1,0 +1,63 @@
+baseURL = "https://LiangquanLi930.github.io/"
+languageCode = "en"
+title = ""
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableEmoji = true
+
+[params]
+  description = "Technical notes and thoughts"
+  author = "Liangquan Li"
+
+  [params.profileMode]
+    enabled = true
+    title = "👋 I'm Liangquan Li"
+    subtitle = "Senior Software Engineer at Red Hat, Beijing"
+
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts"
+
+    [[params.profileMode.buttons]]
+      name = "Categories"
+      url = "/categories"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/LiangquanLi930"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/liangquan-li-4a5831150"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:liangli@redhat.com"
+
+  [params.homeInfoParams]
+    Title = "Welcome to my blog"
+    Content = "Technical notes and thoughts"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 20
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
